@@ -1,5 +1,5 @@
 // these must be modified or set at runtime
-variable "do_token" { }
+variable "do_token" {}
 variable "do_region" {}
 variable "ssh_user" {}
 variable "ssh_key_path" {}
