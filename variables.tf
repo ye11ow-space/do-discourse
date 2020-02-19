@@ -2,8 +2,8 @@
 variable "do_token" {}
 variable "do_region" {}
 variable "ssh_user" {}
-variable "ssh_key_path" {}
 variable "vm_ssh_key_ids" { type = list }
+variable "ssh_key" {}
 variable "vm_name" {}
 
 variable "vm_num_of_droplets" {
