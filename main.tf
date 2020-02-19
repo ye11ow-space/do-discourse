@@ -41,7 +41,7 @@ resource "digitalocean_droplet" "vm" {
     connection {
       agent       = false
       type        = "ssh"
-      private_key = file(var.ssh_key_path)
+      private_key = var.ssh_key
       user        = "root"
       timeout     = "5m"
       host        = digitalocean_droplet.vm[count.index].ipv4_address
